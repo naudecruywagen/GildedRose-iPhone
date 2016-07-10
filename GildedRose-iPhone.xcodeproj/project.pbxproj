@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9CE2E3AA1D32C38100C8F031 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2E3A91D32C38100C8F031 /* main.m */; };
-		9CE2E3AD1D32C38100C8F031 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2E3AC1D32C38100C8F031 /* AppDelegate.m */; };
+		63BF50540A72AAAC6E2EF360 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BF5E4C61A97168D2A07EB6 /* Item.m */; };
+		63BF52612DB1EF9FABEBF908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BF5506976EA5B99ED5BC8D /* LaunchScreen.storyboard */; };
+		63BF5330DFD5662816A1EF8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BF5E3E12EDC40FC6C741D6 /* AppDelegate.m */; };
+		63BF539C7B8F7115458276E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BF56567AF15BF0759BEFE5 /* main.m */; };
+		63BF5A71CD93EF8B47610564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BF570F63C05576C2D898ED /* Main.storyboard */; };
+		63BF5FE7DFB318EF4B96F6A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BF541135F7410175576D4F /* Assets.xcassets */; };
 		9CE2E3B01D32C38100C8F031 /* GildedRoseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2E3AF1D32C38100C8F031 /* GildedRoseViewController.m */; };
-		9CE2E3B31D32C38100C8F031 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE2E3B11D32C38100C8F031 /* Main.storyboard */; };
-		9CE2E3B51D32C38200C8F031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CE2E3B41D32C38200C8F031 /* Assets.xcassets */; };
-		9CE2E3B81D32C38200C8F031 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE2E3B61D32C38200C8F031 /* LaunchScreen.storyboard */; };
 		9CE2E3C31D32C38200C8F031 /* GildedRose_iPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2E3C21D32C38200C8F031 /* GildedRose_iPhoneTests.m */; };
 /* End PBXBuildFile section */
 
@@ -27,16 +28,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63BF50698A9C22B155889FC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63BF52C3665643573EF4320B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		63BF541135F7410175576D4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63BF56567AF15BF0759BEFE5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63BF578496B163F46581A6C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63BF589D1498CA216B67368A /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		63BF5E3E12EDC40FC6C741D6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		63BF5E4C61A97168D2A07EB6 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		63BF5F60E5629A4994F69ADD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9CE2E3A51D32C38100C8F031 /* GildedRose-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GildedRose-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CE2E3A91D32C38100C8F031 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9CE2E3AB1D32C38100C8F031 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9CE2E3AC1D32C38100C8F031 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9CE2E3AE1D32C38100C8F031 /* GildedRoseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GildedRoseViewController.h; sourceTree = "<group>"; };
 		9CE2E3AF1D32C38100C8F031 /* GildedRoseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GildedRoseViewController.m; sourceTree = "<group>"; };
-		9CE2E3B21D32C38100C8F031 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9CE2E3B41D32C38200C8F031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9CE2E3B71D32C38200C8F031 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9CE2E3B91D32C38200C8F031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CE2E3BE1D32C38200C8F031 /* GildedRose-iPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GildedRose-iPhoneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE2E3C21D32C38200C8F031 /* GildedRose_iPhoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GildedRose_iPhoneTests.m; sourceTree = "<group>"; };
 		9CE2E3C41D32C38200C8F031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +63,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63BF5B9792C4958CEA816703 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63BF56567AF15BF0759BEFE5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63BF5E4F4C043CE7C00E1ED3 /* Unused */ = {
+			isa = PBXGroup;
+			children = (
+				63BF5B9792C4958CEA816703 /* Supporting Files */,
+				63BF541135F7410175576D4F /* Assets.xcassets */,
+				63BF5F60E5629A4994F69ADD /* AppDelegate.h */,
+				63BF5E3E12EDC40FC6C741D6 /* AppDelegate.m */,
+				63BF52C3665643573EF4320B /* Info.plist */,
+				63BF5506976EA5B99ED5BC8D /* LaunchScreen.storyboard */,
+				63BF570F63C05576C2D898ED /* Main.storyboard */,
+			);
+			name = Unused;
+			sourceTree = "<group>";
+		};
 		9CE2E39C1D32C38100C8F031 = {
 			isa = PBXGroup;
 			children = (
@@ -81,25 +106,13 @@
 		9CE2E3A71D32C38100C8F031 /* GildedRose-iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				9CE2E3AB1D32C38100C8F031 /* AppDelegate.h */,
-				9CE2E3AC1D32C38100C8F031 /* AppDelegate.m */,
 				9CE2E3AE1D32C38100C8F031 /* GildedRoseViewController.h */,
 				9CE2E3AF1D32C38100C8F031 /* GildedRoseViewController.m */,
-				9CE2E3B11D32C38100C8F031 /* Main.storyboard */,
-				9CE2E3B41D32C38200C8F031 /* Assets.xcassets */,
-				9CE2E3B61D32C38200C8F031 /* LaunchScreen.storyboard */,
-				9CE2E3B91D32C38200C8F031 /* Info.plist */,
-				9CE2E3A81D32C38100C8F031 /* Supporting Files */,
+				63BF5E4F4C043CE7C00E1ED3 /* Unused */,
+				63BF589D1498CA216B67368A /* Item.h */,
+				63BF5E4C61A97168D2A07EB6 /* Item.m */,
 			);
 			path = "GildedRose-iPhone";
-			sourceTree = "<group>";
-		};
-		9CE2E3A81D32C38100C8F031 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9CE2E3A91D32C38100C8F031 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		9CE2E3C11D32C38200C8F031 /* GildedRose-iPhoneTests */ = {
@@ -191,9 +204,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CE2E3B81D32C38200C8F031 /* LaunchScreen.storyboard in Resources */,
-				9CE2E3B51D32C38200C8F031 /* Assets.xcassets in Resources */,
-				9CE2E3B31D32C38100C8F031 /* Main.storyboard in Resources */,
+				63BF5FE7DFB318EF4B96F6A2 /* Assets.xcassets in Resources */,
+				63BF52612DB1EF9FABEBF908 /* LaunchScreen.storyboard in Resources */,
+				63BF5A71CD93EF8B47610564 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CE2E3B01D32C38100C8F031 /* GildedRoseViewController.m in Sources */,
-				9CE2E3AD1D32C38100C8F031 /* AppDelegate.m in Sources */,
-				9CE2E3AA1D32C38100C8F031 /* main.m in Sources */,
+				63BF539C7B8F7115458276E5 /* main.m in Sources */,
+				63BF5330DFD5662816A1EF8D /* AppDelegate.m in Sources */,
+				63BF50540A72AAAC6E2EF360 /* Item.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,20 +250,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9CE2E3B11D32C38100C8F031 /* Main.storyboard */ = {
+		63BF5506976EA5B99ED5BC8D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9CE2E3B21D32C38100C8F031 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9CE2E3B61D32C38200C8F031 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9CE2E3B71D32C38200C8F031 /* Base */,
+				63BF50698A9C22B155889FC1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		63BF570F63C05576C2D898ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63BF578496B163F46581A6C3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
