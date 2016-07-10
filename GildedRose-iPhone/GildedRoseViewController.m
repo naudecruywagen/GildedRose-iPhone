@@ -1,18 +1,10 @@
-//
-//  ViewController.m
-//  GildedRose-iPhone
-//
-//  Created by Naude Cruywagen on 2016/07/10.
-//  Copyright © 2016 Glucode. All rights reserved.
-//
+#import "GildedRoseViewController.h"
 
-#import "ViewController.h"
-
-@interface ViewController ()
+@interface GildedRoseViewController ()
 
 @end
 
-@implementation ViewController
+@implementation GildedRoseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
