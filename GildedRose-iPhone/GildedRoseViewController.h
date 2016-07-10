@@ -6,7 +6,5 @@
 
 @property (nonatomic, strong) NSArray<Item *> *items;
 
-- (instancetype)initWith:(NSArray<Item *> *)items;
-
 @end
 

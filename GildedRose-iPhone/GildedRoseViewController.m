@@ -3,12 +3,9 @@
 
 @implementation GildedRoseViewController
 
-- (instancetype)initWith:(NSArray<Item *> *)items {
-    self = [self initWithStyle:UITableViewStylePlain];
-    if (self) {
-        _items = items;
-    }
-    return self;
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = @"Gilded Rose";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -18,7 +15,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ItemCellIdentifier"];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
                                       reuseIdentifier:@"ItemCellIdentifier"];
     }
     cell.textLabel.text = [self.items[(NSUInteger) indexPath.row] name];
@@ -76,6 +73,8 @@
             }
         }
     }
+
+    [tableView reloadData];
 }
 
 

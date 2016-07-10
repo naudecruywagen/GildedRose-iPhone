@@ -108,9 +108,9 @@
 			children = (
 				9CE2E3AE1D32C38100C8F031 /* GildedRoseViewController.h */,
 				9CE2E3AF1D32C38100C8F031 /* GildedRoseViewController.m */,
-				63BF5E4F4C043CE7C00E1ED3 /* Unused */,
 				63BF589D1498CA216B67368A /* Item.h */,
 				63BF5E4C61A97168D2A07EB6 /* Item.m */,
+				63BF5E4F4C043CE7C00E1ED3 /* Unused */,
 			);
 			path = "GildedRose-iPhone";
 			sourceTree = "<group>";
@@ -418,6 +418,7 @@
 				9CE2E3C91D32C38200C8F031 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CE2E3CA1D32C38200C8F031 /* Build configuration list for PBXNativeTarget "GildedRose-iPhoneTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +427,7 @@
 				9CE2E3CC1D32C38200C8F031 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
