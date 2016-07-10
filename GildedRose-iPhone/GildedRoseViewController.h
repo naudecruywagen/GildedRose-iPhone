@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-@interface GildedRoseViewController : UIViewController
+@interface GildedRoseViewController : UITableViewController
 
 
 @end
