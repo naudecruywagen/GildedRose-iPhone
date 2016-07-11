@@ -1,12 +1,6 @@
-//
-//  GildedRose_iPhoneTests.m
-//  GildedRose-iPhoneTests
-//
-//  Created by Naude Cruywagen on 2016/07/10.
-//  Copyright © 2016 Glucode. All rights reserved.
-//
-
 #import <XCTest/XCTest.h>
+#import "Item.h"
+#import "GildedRoseViewController.h"
 
 @interface GildedRose_iPhoneTests : XCTestCase
 
@@ -14,26 +8,109 @@
 
 @implementation GildedRose_iPhoneTests
 
-- (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+- (GildedRoseViewController *)updateQualityForItem:(Item *)item {
+    GildedRoseViewController *gildedRoseViewController = [[GildedRoseViewController alloc] initWithNibName:nil
+                                                                                                    bundle:nil];
+    gildedRoseViewController.items = @[item];
+
+    [gildedRoseViewController tableView:nil
+                didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0
+                                                           inSection:0]];
+    return gildedRoseViewController;
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+- (void)testThatQuality_ShouldDecreaseTwiceAsFast_WhenSellByDatePassed {
+    Item *item = [Item itemWithName:@"+5 Dexterity Vest" sellIn:1 andQuality:20];
+
+    GildedRoseViewController *gildedRoseViewController = [self updateQualityForItem:item];
+
+    XCTAssertEqual(19, item.quality);
+
+    [gildedRoseViewController tableView:nil
+                didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0
+                                                           inSection:0]];
+
+    XCTAssertEqual(17, item.quality);
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testThatQuality_ShouldNeverBeNegative {
+    Item *item = [Item itemWithName:@"+5 Dexterity Vest" sellIn:1 andQuality:0];
+
+    [self updateQualityForItem:item];
+
+    XCTAssertEqual(0, item.quality);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testThatQuality_ShouldNeverBeGreaterThan50 {
+    Item *item = [Item itemWithName:@"Aged Brie" sellIn:50 andQuality:50];
+
+    [self updateQualityForItem:item];
+
+    XCTAssertEqual(50, item.quality);
+}
+
+- (void)testThatBrie_ShouldIncreaseInQualityWithAge {
+    Item *item = [Item itemWithName:@"Aged Brie" sellIn:1 andQuality:0];
+
+    [self updateQualityForItem:item];
+
+    XCTAssertEqual(1, item.quality);
+}
+
+- (void)testThatBrie_ShouldIncreaseTwiceAsFast_WhenSellByDatePassed {
+    Item *item = [Item itemWithName:@"Aged Brie" sellIn:0 andQuality:0];
+
+    [self updateQualityForItem:item];
+
+    XCTAssertEqual(2, item.quality);
+}
+
+- (void)testThatSulfuras_ShouldNotDescreaseInQuality {
+    Item *item = [Item itemWithName:@"Sulfuras, Hand of Ragnaros" sellIn:0 andQuality:80];
+
+    [self updateQualityForItem:item];
+
+    XCTAssertEqual(80, item.quality);
+}
+
+- (void)testThatSulfuras_ShouldNotDecreaseSellByDate {
+    Item *item = [Item itemWithName:@"Sulfuras, Hand of Ragnaros" sellIn:1 andQuality:80];
+
+    [self updateQualityForItem:item];
+
+    XCTAssertEqual(1, item.sellIn);
+}
+
+- (void)testThatBackstagePasses_ShouldIncreaseQualityBy1_WhenSellByDateOver10 {
+    Item *item = [Item itemWithName:@"Backstage passes to a TAFKAL80ETC concert" sellIn:15 andQuality:20];
+
+    [self updateQualityForItem:item];
+
+    XCTAssertEqual(21, item.quality);
+}
+
+- (void)testThatBackstagePasses_ShouldIncreaseQualityBy2_WhenSellByDateOver5_AndLessThanEqual10 {
+    Item *item = [Item itemWithName:@"Backstage passes to a TAFKAL80ETC concert" sellIn:10 andQuality:20];
+
+    [self updateQualityForItem:item];
+
+    XCTAssertEqual(22, item.quality);
+}
+
+- (void)testThatBackstagePasses_ShouldIncreaseQualityBy3_WhenSellByDateLessThanEqual5 {
+    Item *item = [Item itemWithName:@"Backstage passes to a TAFKAL80ETC concert" sellIn:5 andQuality:20];
+
+    [self updateQualityForItem:item];
+
+    XCTAssertEqual(23, item.quality);
+}
+
+- (void)testThatBackstagePasses_ShouldZeroQuality_WhenSellByDateZero {
+    Item *item = [Item itemWithName:@"Backstage passes to a TAFKAL80ETC concert" sellIn:0 andQuality:20];
+
+    [self updateQualityForItem:item];
+
+    XCTAssertEqual(0, item.quality);
 }
 
 @end
