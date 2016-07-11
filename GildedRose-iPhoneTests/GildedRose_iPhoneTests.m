@@ -13,7 +13,7 @@
                                                                                                     bundle:nil];
     gildedRoseViewController.items = @[item];
 
-    [gildedRoseViewController tableView:nil
+    [gildedRoseViewController tableView:gildedRoseViewController.tableView
                 didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0
                                                            inSection:0]];
     return gildedRoseViewController;
@@ -26,7 +26,7 @@
 
     XCTAssertEqual(19, item.quality);
 
-    [gildedRoseViewController tableView:nil
+    [gildedRoseViewController tableView:gildedRoseViewController.tableView
                 didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0
                                                            inSection:0]];
 
