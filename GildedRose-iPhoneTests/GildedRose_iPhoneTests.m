@@ -12,6 +12,7 @@
     GildedRoseViewController *gildedRoseViewController = [[GildedRoseViewController alloc] initWithNibName:nil
                                                                                                     bundle:nil];
     gildedRoseViewController.items = @[item];
+    [gildedRoseViewController.tableView reloadData];
 
     [gildedRoseViewController tableView:gildedRoseViewController.tableView
                 didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0
