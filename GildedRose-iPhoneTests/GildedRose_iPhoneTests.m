@@ -23,13 +23,11 @@
 - (void)testThatQuality_ShouldDecreaseTwiceAsFast_WhenSellByDatePassed {
     Item *item = [Item itemWithName:@"+5 Dexterity Vest" sellIn:1 andQuality:20];
 
-    GildedRoseViewController *gildedRoseViewController = [self updateQualityForItem:item];
+    [self updateQualityForItem:item];
 
     XCTAssertEqual(19, item.quality);
 
-    [gildedRoseViewController tableView:gildedRoseViewController.tableView
-                didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0
-                                                           inSection:0]];
+    [self updateQualityForItem:item];
 
     XCTAssertEqual(17, item.quality);
 }
